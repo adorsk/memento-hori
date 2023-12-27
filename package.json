@@ -1,0 +1,19 @@
+{
+  "name": "memento-hori",
+  "version": "1.0.0",
+  "description": "memento-hori",
+  "main": "index.js",
+  "scripts": {
+    "rollup": "rollup -c rollup.config.mjs",
+    "rollup:watch": "rollup -c rollup.config.mjs --watch",
+    "compile": "npm run rollup && node scripts/build_html.mjs > build/memento_hori.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^4.9.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4"
+  }
+}
